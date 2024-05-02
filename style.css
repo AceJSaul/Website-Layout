@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: hsl(0, 0%, 90%);
+    margin-top:0px;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1{
+    margin-top:0px;
+}
+
+.navbar{
+    background-color: black;
+    height: 50px;
+}
+
+.navbar h3{
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    left:50%;
+    transform: translate(-50%, 0%);
+    margin-top: 13px; 
+}
+
+aside{
+    margin-left:8px;
+    padding-right:6px;
+    width:23%; 
+    float: left;
+    border-right: 1px solid;
+}
+
+aside h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+section{
+    margin-left:10px;
+    width:50%;
+    float: left;
+    border-right: 1px solid;
+}
+
+section h3{
+    text-align: center;
+    font-size: 28px;
+}
+
+article{
+    margin-right:15px;
+    width:23%;
+    float: left;
+}
+
+article h3{
+    text-align: center;
+    font-size: 28px;
+}
+
+footer{
+    display:block;
+    clear: both; /* Elimina os "floats" desse elemento */
+    background-color: black;
+    height:100px;
+    text-align:center;
+}
+
+footer h2{
+    color:white;
+    position: relative;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+
+@media screen and (max-width:849px){ /* Caso a largura da tela seja menor que 849px, a largura muda*/
+    aside, section, article{
+        width: 100%;
+    }
+}
